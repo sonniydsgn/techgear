@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
   <title>Techgear</title>
   <meta name="description" content="Проект 'Techgear' для портфолио lostsleepyboii.">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="images/favicons/site.webmanifest">
   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#222222">
   <meta name="msapplication-TileColor" content="#222222">
   <meta name="theme-color" content="#222222">
@@ -20,23 +20,25 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="#intro" class="logo">
+        <a href="#" class="logo">
           <img src="images/logo.svg" alt="Techgear">
         </a>
         <div class="menuToggle" onclick="toggleMenu()">
           <span></span>
         </div>
         <nav class="nav">
-          <a href="#intro" class="nav__link" onclick="toggleMenu()">Home</a>
+          <a href="#" class="nav__link" onclick="toggleMenu()">Home</a>
           <a href="#products" class="nav__link" onclick="toggleMenu()">Products</a>
           <a href="#services" class="nav__link" onclick="toggleMenu()">Services</a>
           <a href="#members" class="nav__link" onclick="toggleMenu()">Members</a>
           <a href="#contacts" class="nav__link" onclick="toggleMenu()">Contacts</a>
-          <button class="btn  btn--cta" onclick="toggleMenu()">Sign In</button>
+          <button class="btn btn--cta" onclick="toggleMenu()">Sign In</button>
         </nav>
       </div>
-    </div>
+    </div> 
   </header>
+
+  
   <section class="intro" id="intro">
     <div class="container">
       <div class="intro__inner">
@@ -51,7 +53,7 @@
             </svg>          
             <span>add to cart</span>
           </button>
-          <button class="btn  btn--more">
+          <button class="btn btn--more">
             <svg class="btn__icon">
               <use href="images/icons/sprite.svg#more"></use>
             </svg>          
@@ -62,12 +64,15 @@
           <source srcset="images/placeholder.webp" data-srcset="images/mouse.webp" type="image/webp"> 
           <img class="lazy" src="images/placeholder.png" data-src="images/mouse.png" alt="G502 HERO WIRELESS">
         </picture>
-      </div>
-    </div>
+      </div> 
+    </div> 
   </section>
+
+  
   <section class="products" id="products">
     <div class="container">
       <div class="products__inner">
+        
         <div class="products__title">Products</div>
         <h2 class="products__subtitle">Which type of gear are you looking for?</h2>
         <a href="#" class="products__link">View
@@ -75,7 +80,10 @@
             <use href="images/icons/sprite.svg#link_arrow"></use>
           </svg>
         </a> 
+
+        
         <div class="products__list">
+
           <div class="product__item">
             <div class="product__item__content">
               <picture class="product__photo">
@@ -103,13 +111,17 @@
               <h5 class="product__name">Office & Others</h5>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+
+        </div> 
+      </div> 
+    </div> 
   </section>
+
+  
   <section class="services" id="services">
     <div class="container">
       <div class="services__inner">
+        
         <div class="services__title">Services</div>
         <h2 class="services__subtitle">We provide more than high-tech products!</h2>
         <a href="#" class="services__link">View
@@ -117,6 +129,8 @@
             <use href="images/icons/sprite.svg#link_arrow"></use>
           </svg>
         </a>
+
+        
         <div class="services__list">
           <div class="service__item">
             <picture class="service__photo">
@@ -158,13 +172,17 @@
               <p class="service__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div> 
+
+      </div> 
+    </div> 
   </section>
+
+  
   <section class="members" id="members">
     <div class="container">
       <div class="members__inner">
+        
         <div class="members__title">Members</div>
         <h2 class="members__subtitle">We proudly introduce our powerful members</h2>
         <a href="#" class="members__link">View
@@ -172,7 +190,11 @@
             <use href="images/icons/sprite.svg#link_arrow"></use>
           </svg>
         </a>
+
+        
+
         <div class="glider-contain multiple">
+
           <button class="glider-prev" aria-label="Previous Member">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
               <g id="Компонент_14_1" data-name="Компонент 14 – 1" opacity="1">
@@ -181,7 +203,9 @@
               </g>
             </svg>                  
           </button>
+
           <div class="glider">
+
             <div class="member__item">
               <div class="member__logo">
                 <picture>
@@ -191,6 +215,7 @@
               </div>
               <div class="member__name">Electros Softwares</div>
             </div>
+  
             <div class="member__item">
               <div class="member__logo">
                 <picture>
@@ -200,6 +225,7 @@
               </div>
               <div class="member__name">Tera Tech Lab</div>
             </div>
+  
             <div class="member__item">
               <div class="member__logo">
                 <picture>
@@ -209,6 +235,7 @@
               </div>
               <div class="member__name">TC Predator Gaming</div>
             </div>
+  
             <div class="member__item">
               <div class="member__logo">
                 <picture>
@@ -218,6 +245,7 @@
               </div>
               <div class="member__name">SpacePlay</div>
             </div>  
+
             <div class="member__item">
               <div class="member__logo">
                 <picture>
@@ -227,6 +255,7 @@
               </div>
               <div class="member__name">Electros Softwares</div>
             </div>
+  
             <div class="member__item">
               <div class="member__logo">
                 <picture>
@@ -236,7 +265,9 @@
               </div>
               <div class="member__name">Tera Tech Lab</div>
             </div>
-          </div>
+
+          </div> 
+
           <button class="glider-next" aria-label="Next Member">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
               <g id="Компонент_14_2" data-name="Компонент 14 – 2" transform="translate(44 44) rotate(180)">
@@ -245,13 +276,17 @@
               </g>
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
+
+        </div> 
+      </div> 
+    </div> 
   </section>
+
+  
   <section class="contacts" id="contacts">
     <div class="container">
       <div class="contacts__inner">
+        
         <div class="contacts__title">Contacts</div>
         <h3 class="contacts__subtitle">We proudly introduce our powerful members</h3>
         <a href="#" class="contacts__link">View
@@ -259,10 +294,13 @@
             <use href="images/icons/sprite.svg#link_arrow"></use>
           </svg>
         </a>
+
+        
         <div class="contacts__wrapper">
           <div class="contacts__content">
             <img class="contacts__logo" src="images/logo.svg" alt="Techgear">
             <div class="contacts__list">
+
               <h5 class="contact__list__name">Direct Channels</h5>        
               <a class="contact" href="tel:+509 1234 5678">
                 <svg class="contact__icon">
@@ -276,50 +314,56 @@
                 </svg>
                 <div class="contact__name">support@techgear.io</div>
               </a>
+
               <h5 class="contact__list__name">Social Media</h5>        
               <div class="contact__social">
-                <a class="social__link" href="https://t.me/lostsleepyboii" target="_blank" rel=noopener>
+                <a class="social__link" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">
                   <svg class="social__icon">
                     <use href="images/icons/sprite.svg#facebook"></use>
                   </svg>
                 </a>
-                <a class="social__link" href="https://t.me/lostsleepyboii" target="_blank" rel=noopener>
+                <a class="social__link" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">
                   <svg class="social__icon">
                     <use href="images/icons/sprite.svg#instagram"></use>
                   </svg>
                 </a>
-                <a class="social__link" href="https://t.me/lostsleepyboii" target="_blank" rel=noopener>
+                <a class="social__link" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">
                   <svg class="social__icon">
                     <use href="images/icons/sprite.svg#twitter"></use>
                   </svg>               
                 </a>
-                <a class="social__link" href="https://t.me/lostsleepyboii" target="_blank" rel=noopener>
+                <a class="social__link" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">
                   <svg class="social__icon">
                     <use href="images/icons/sprite.svg#telegram"></use>
                   </svg>               
                 </a>
-                <a class="social__link" href="https://t.me/lostsleepyboii" target="_blank" rel=noopener>
+                <a class="social__link" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">
                   <svg class="social__icon">
                     <use href="images/icons/sprite.svg#github"></use>
                   </svg>
                 </a>
               </div>
+
             </div> 
           </div>
+
           <div class="contacts__form">
             <div class="form__prompt">Feel free to send us your message</div>
             <form class="form__list">
-              <input class="form__area" minlength="3" maxlength="60" autocomplete="name" placeholder="Your name*"></input>
-              <input class="form__area" minlength="5" maxlength="60" autocomplete="email" placeholder="Your email*"></input>
-              <input class="form__area  form__area--subject" maxlength="135" placeholder="Subject"></input>
-              <textarea class="form__area  form__area--message" minlength="20" maxlength="965" placeholder="Message*"></textarea>
+              <input class="form__area" minlength="3" maxlength="60" autocomplete="name" placeholder="Your name*">
+              <input class="form__area" minlength="5" maxlength="60" autocomplete="email" placeholder="Your email*">
+              <input class="form__area form__area--subject" maxlength="135" placeholder="Subject">
+              <textarea class="form__area form__area--message" minlength="20" maxlength="965" placeholder="Message*"></textarea>
             </form>
-            <button class="btn  btn--large">Submit</button>
+            <button class="btn btn--large">Submit</button>
           </div>
-        </div>
-      </div>
-    </div>
+
+        </div> 
+      </div> 
+    </div> 
   </section>
+
+  
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -332,6 +376,7 @@
             <a class="footer__link" href="#">Family</a>
             <a class="footer__link" href="#">Personalized</a>
           </div>
+
           <div class="footer__item">
             <h5 class="footer__item__name">showrooms</h5>
             <a class="footer__link" href="#">Showroom Washington, D.C.</a>
@@ -339,6 +384,7 @@
             <a class="footer__link" href="#">Showroom San Francisco</a>
             <a class="footer__link" href="#">Showroom Hoston</a>
           </div>
+
           <div class="footer__item">
             <h5 class="footer__item__name">family members</h5>
             <a class="footer__link" href="#">Electros Softwares</a>
@@ -348,6 +394,7 @@
             <a class="footer__link" href="#">V-Poweration</a>
             <a class="footer__link" href="#">AX3 AI System</a>
           </div>
+
           <div class="footer__item">
             <h5 class="footer__item__name">help center</h5>
             <a class="footer__link" href="#">FAQs</a>
@@ -356,11 +403,13 @@
           </div>
         </div>
         <div class="footer__copyright">
-          Made by <a class="copyright__link" href="https://github.com/lostsleepyboii" >lostsleepyboii.</a> All rights reserved
+          Made by <a class="copyright__link" href="https://github.com/lostsleepyboii">lostsleepyboii.</a> All rights reserved
         </div>
       </div>
     </div>
   </footer>
+
+  
   <script src="js/script.min.js"></script>
 </body>
 </html>
