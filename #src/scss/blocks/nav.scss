@@ -1,0 +1,129 @@
+.nav {
+  display: inline-block;
+}
+
+.nav__link {
+  margin-left: 4rem;
+
+  color: rgba($white, 0.6);
+  font-size: 0.93rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  transition: 0.2s color ease;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.menuToggle {
+  display: none;
+}
+
+// Media
+@include large-device {
+  .nav__link {
+    margin-left: 2rem;
+  }
+}
+
+@include tablet {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .nav {
+    display: block;
+    overflow: auto;
+    
+    padding: 1rem 1rem 5rem 1rem;
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 57px;
+    right: -100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #222222;
+
+    transition: all 0.2s ease;
+  }
+  
+  .nav.active {
+    right: 0;
+  }
+
+  .nav__link {
+    margin-left: 0;
+    padding: 1.5rem;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .menuToggle {
+    display: block;
+
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    cursor: pointer;
+  }
+
+  .menuToggle span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $white;
+    transition: all 0.2s ease;
+  }
+
+  .menuToggle::before,
+  .menuToggle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $white;
+    transition: all 0.2s ease;
+  }
+
+  .menuToggle::before {
+    top: 0;
+  }
+
+  .menuToggle::after {
+    bottom: 0;
+  }
+
+  .menuToggle.active span {
+    transform: scale(0);
+  }
+
+  .menuToggle.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .menuToggle.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}

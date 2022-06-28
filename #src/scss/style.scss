@@ -1,0 +1,40 @@
+@import "reset";
+@import "vars";
+@import "mixins";
+
+/*	Vendors	*/
+@import "vendor/glider.scss";
+
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.93rem;
+	background-color: #222222;
+	color: $white;
+}
+
+img {
+	opacity: 1;
+	transition: all 0.2s ease;
+}
+
+.lazy { 
+	opacity: 0;
+	transition: all 0.2s ease;
+ }
+
+/*	Blocks	*/
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/products";
+@import "blocks/services";
+@import "blocks/members";
+@import "blocks/contacts";
+@import "blocks/footer";

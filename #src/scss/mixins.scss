@@ -1,0 +1,114 @@
+@mixin title {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  color: rgba($blue, 0.15);
+  font-size: 5.33rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include sm-tablet {
+    font-size: 4.33rem;
+  }
+
+  @include mobile {
+    font-size: 4rem;
+  }
+
+  @include sm-mobile {
+    font-size: 3rem;
+  }
+}
+
+@mixin subtitle {
+  margin-top: 3.86rem;
+
+  color: $white;
+  font-size: 1.86rem;
+  font-weight: 400;
+
+  @include sm-tablet {
+    margin-top: 3.2rem;
+    font-size: 1.5rem;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+@mixin link {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+    color: $blue;
+    font-size: 1rem;
+    font-weight: 400;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: lighten($blue, 8);
+    
+      .link_arrow {
+        stroke: lighten($blue, 8);
+      }
+    }
+
+  .link_arrow {
+    width: 24px;
+    height: 24px;
+    stroke: $blue;
+
+    margin-left: 2rem;
+    position: relative;
+    top: 8px;
+  }
+
+  @include mobile {
+    margin: 5rem 0 ;
+  }
+  
+  @include sm-mobile {
+    margin: 4rem 0 ;
+  }
+}
+
+// Media Mixins
+
+@mixin large-device {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
+@mixin sm-tablet {
+  @media (max-width: 746px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin sm-mobile {
+  @media (max-width: 430px) {
+    @content;
+  }
+}

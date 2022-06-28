@@ -1,0 +1,202 @@
+.contacts {
+  padding: 13.33rem 0;
+}
+
+.contacts__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+// Contacts Header
+.contacts__title {
+  @include title
+}
+
+.contacts__subtitle {
+  @include subtitle
+}
+
+.contacts__link {
+  @include link
+}
+
+// Contacts List
+.contacts__wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+// Contacts Content
+.contacts__content {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts__logo {
+  margin-right: auto;
+}
+
+// Contacts
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__list__name {
+  margin-top: 2.66rem;
+
+  color: $white;
+  font-size: 0.93rem;
+  font-weight: 800;
+}
+
+.contact {
+  margin-top: 1.33rem;
+  display: flex;
+
+  &:hover {
+    .contact__icon {
+      stroke: lighten($blue, 8);
+    }
+  }
+}
+
+.contact__icon {
+  width: 24px;
+  height: 24px;
+
+  stroke: $blue;
+
+  margin-right: 0.53rem;
+  position: relative;
+  bottom: 3px;
+}
+
+.contact__name {
+  color: $white;
+  font-size: 0.93rem;
+  font-weight: 400;
+}
+
+// Social
+.contact__social {
+  margin-top: 1.33rem;
+}
+
+.social__icon {
+  width: 24px;
+  height: 24px;
+
+  stroke: $blue;
+
+  &:hover {
+    stroke: lighten($blue, 8);
+  }
+}
+
+.social__link {
+  &:not(:last-child) {
+    margin-right: 1.33rem;
+  }
+}
+
+// Contacts Form
+.contacts__form {
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form__prompt {
+  margin-bottom: 1.33rem;
+
+  color: $white;
+  font-size: 0.93rem;
+  font-weight: 800;
+}
+
+.form__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__area {
+  width: 48.6%;
+  height: 52px;
+  padding: 1rem 1.33rem;
+  margin-bottom: 1.33rem;
+
+  resize: none;
+  overflow: auto;
+
+  outline: none;
+  border-radius: 4px;
+
+  color: rgba($white, 0.8);
+  font-size: 0.93rem;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 2;
+  background-color: rgba($white, 0.2);
+
+  transition: all 0.1s ease;
+
+  &:focus {
+    border: 2px solid $blue;
+  }
+
+  &:invalid {
+    border: 2px solid red;
+  }
+}
+
+.form__area--subject {
+  width: 100%;
+}
+
+.form__area--message {
+  width: 100%;
+  height: 160px;
+}
+
+// Media
+@include tablet {
+  .contacts {
+    padding-top: 6.66rem;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+
+  .contacts__content {
+    width: 100%;
+  }
+
+  .contacts__form {
+    width: 100%;
+  }
+
+  .form__prompt {
+    margin-top: 2.33rem;
+  }
+}
+
+@include mobile {
+  .form__area {
+    width: 100%;
+  }
+}

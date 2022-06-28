@@ -1,0 +1,92 @@
+.intro {
+  padding-top: 6.66rem;
+}
+
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro__content {
+  width: 50%;
+}
+
+.intro__title {
+  margin-bottom: 1.5rem;
+
+  color: $white;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.intro__subtitle {
+  margin-bottom: 1.5rem;
+
+  color: rgba($white, 0.4);
+  font-size: 1.86rem;
+  font-weight: 400;
+}
+
+.intro__text {
+  margin-bottom: 1.5rem;
+
+  color: $white;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.intro__price {
+  margin-bottom: 1.5rem;
+
+  color: $blue;
+  font-size: 1.6rem;
+}
+
+.intro__photo {
+  width: 50%;
+}
+
+.intro__photo img {
+  width: 100%;
+  height: 100%;
+}
+
+// Media
+@include laptop {
+  .intro {
+    padding-top: 13.33rem;
+  }
+  
+  .intro__content {
+    width: 70%;
+  }
+
+  .intro__photo {
+    width: 30%;
+  }
+}
+
+@include tablet {
+  .intro__title {
+    font-size: 2.2rem;
+  }
+  
+  .intro__subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@include mobile {
+  .intro__content {
+    width: 100%;
+  }
+
+  .intro__title {
+    font-size: 1.9rem;
+  }
+
+  .intro__photo {
+    display: none;
+  }
+}

@@ -1,0 +1,133 @@
+.services {
+  padding-top: 13.33rem;
+}
+
+.services__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+// Services Header
+.services__title {
+  @include title
+}
+
+.services__subtitle {
+  @include subtitle
+}
+
+.services__link {
+  @include link
+}
+
+// Services List
+.services__list {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service__item {
+  width: 555px;
+  margin-top: 2rem;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 20px;
+  background-color: rgba($white, 0.1);
+}
+
+.service__photo {
+  height: 100%;
+
+  position: relative;
+  bottom: 1.33rem;
+
+  margin-right: 1.33rem;
+}
+
+.service__photo img {
+  height: 100%;
+}
+
+.service__name {
+  margin-bottom: 1rem;
+
+  color: $white;
+  font-size: 1.46rem;
+  font-weight: 400;
+}
+
+.service__desc {
+  color: $white;
+  font-size: 0.93rem;
+  font-weight: 400;
+}
+
+// Media
+@include large-device {
+  .service__item {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .services {
+    padding-top: 6.66rem;
+  }
+}
+
+@include mobile {
+  .service__item {
+    margin-top: 0;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  .service__photo {
+    height: 60%;
+    bottom: 0;
+  }
+  
+  .service__name {
+    font-size: 1.2rem;
+  }
+}
+
+@include sm-mobile {
+  .service__item {
+    padding: 2rem;
+
+    height: 100%;
+
+    flex-direction: column;
+  }
+
+  .service__photo {
+    width: 60%;
+
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .service__photo img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .service__name {
+    font-size: 1.36rem;
+  }
+}
